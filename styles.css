@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --white-100: #f4f4f5;
+  --white-200: #fdf4e5;
+  --white-300: #fefcfb;
+  --white-400: #f9ddd2;
+  --blue-100: hwb(210 9% 18%);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  font-size: 1.6rem;
+  background-image: url("./src/Images/ot-landing-482ab1ba5cb91e358f60e807c2c4b9ab.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+.sign_in_link {
+  color: var(--white-100);
+  padding-top: 2rem;
+  display: block;
+}
+
+main {
+  text-align: center;
+}
+.brand_name {
+  font-weight: 700;
+  font-size: 7rem;
+  margin: 12rem 0 3.2rem;
+  color: var(--white-300);
+}
+.brand_description {
+  font-size: 4rem;
+  color: var(--white-200);
+  margin-bottom: 15rem;
+}
+.view_singles {
+  background-color: var(--blue-100);
+  border-radius: 10rem;
+  text-align: center;
+  color: var(--white-100);
+  display: block;
+  padding: 2rem 0;
+  font-weight: 700;
+}
+.view_singles:hover {
+  opacity: 0.7;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white-400);
+  width: 90%;
+  margin: 10rem auto;
+}
+footer a {
+  color: inherit;
+}
+@media (min-width: 620px) {
+  .brand_name {
+    font-size: 10rem;
+  }
+  .brand_description {
+    font-size: 5rem;
+  }
+}
